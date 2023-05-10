@@ -2,10 +2,10 @@ import org.junit.Test;
 import chicken.Farm;
 import static org.junit.Assert.*;
 
-public class CC {
+public class DC {
     @Test
     public void testCheckFarm1() {
-        boolean result = Farm.checkFarm(799,"White Cochin", true);
+        boolean result = Farm.checkFarm(799,"White Cochin", false);
         assertTrue(result);
     }
 

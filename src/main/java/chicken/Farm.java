@@ -1,16 +1,23 @@
 package chicken;
 
-import java.util.Date;
+import java.util.List;
 
-public record Farm(Integer egg, String typeChicken, Date layTime, boolean isPsychical) {
-    public Farm(Integer egg, String typeChicken, Date layTime) {
-        this(egg, typeChicken, layTime, true);
+public record Farm(int egg, String typeChicken, boolean isPsychical) {
+    private static List<String> chickenType() {
+        return List.of(
+            "Black Sex Link",
+            "White Cochin",
+            "Rhode Island Red",
+            "Buff Orpington",
+            "Buff Laced Polish"
+        );
     }
 
-    public Farm(Integer egg, String typeChicken, Date layTime, boolean isPsychical) {
-        this.egg = egg;
-        this.typeChicken = typeChicken;
-        this.layTime = new Date();
-        this.isPsychical = isPsychical;
+    public static boolean checkFarm(int egg, String typeChicken, boolean isPsychical) {
+        List<String> chickenTypes = chickenType();
+
+        return isPsychical &&
+            (egg >= 0 && egg <= 1000 && egg % 20 == 0) ||
+            chickenTypes.contains(typeChicken);
     }
 }
