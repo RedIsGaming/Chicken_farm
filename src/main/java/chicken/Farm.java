@@ -2,7 +2,7 @@ package chicken;
 
 import java.util.List;
 
-public record Farm(int egg, String typeChicken, boolean isPsychical) {
+public record Farm(boolean isPsychical, int egg, String typeChicken) {
     private static List<String> chickenType() {
         return List.of(
             "Black Sex Link",
@@ -13,7 +13,7 @@ public record Farm(int egg, String typeChicken, boolean isPsychical) {
         );
     }
 
-    public static boolean checkFarm(int egg, String typeChicken, boolean isPsychical) {
+    public static boolean checkFarm(boolean isPsychical, int egg, String typeChicken) {
         List<String> chickenTypes = chickenType();
 
         return isPsychical &&

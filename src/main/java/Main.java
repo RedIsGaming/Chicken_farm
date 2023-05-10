@@ -9,11 +9,11 @@ public class Main {
         );
 
         List<Farm> farms = List.of(
-            new Farm(0, "Black Sex Link",true),
-            new Farm(250, "White Cochin",false),
-            new Farm(500, "Rhode Island Red",true),
-            new Farm(750, "Buff Orpington",false),
-            new Farm(1000, "Buff Laced Polish",true)
+            new Farm(true,0, "Black Sex Link"),
+            new Farm(false, 250, "White Cochin"),
+            new Farm(true, 500, "Rhode Island Red"),
+            new Farm(false, 750, "Buff Orpington"),
+            new Farm(true, 1000, "Buff Laced Polish")
         );
 
         int i = 0;
@@ -23,8 +23,8 @@ public class Main {
             Farm farm = iterator.next();
             i++;
 
-            System.out.printf("\u001B[34mStorage %d\nNumber of eggs: %d\nChicken type: %s%nIs psychical: %b\n\n",
-                i, farm.egg(), farm.typeChicken(), farm.isPsychical()
+            System.out.printf("\u001B[34mStorage %d\nIs psychical: %b\nNumber of eggs: %d\nChicken type: %s\n\n",
+                i, farm.isPsychical(), farm.egg(), farm.typeChicken()
             );
         }
     }

@@ -15,7 +15,7 @@ The Java classes and records that are used in this project are:
 > The `Farm` record is used to create a new farm.<br/>
 > The `Farm` record contains a `canonical constructor` and 2 method called `chickenType` and `checkFarm`.<br/>
 > The `chickenType` method returns a list of chicken types.<br/>
-> The `checkFarm` method takes 3 arguments: `int egg`, `String typeChicken` and `boolean isPsychical`.
+> The `checkFarm` method takes 3 arguments: `boolean isPsychical`, `int egg` and `String typeChicken`.
 
 ## How does the conditions work?
 > There have to be 0 or more eggs. Each farm can have no more than 1000 eggs stored and each basket stores exactly 20 
