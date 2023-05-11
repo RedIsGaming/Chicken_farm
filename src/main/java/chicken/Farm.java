@@ -16,8 +16,6 @@ public record Farm(boolean isPsychical, int egg, String typeChicken) {
     public static boolean checkFarm(boolean isPsychical, int egg, String typeChicken) {
         List<String> chickenTypes = chickenType();
 
-        return isPsychical &&
-            (egg >= 0 && egg <= 1000 && egg % 20 == 0) ||
-            chickenTypes.contains(typeChicken);
+        return (isPsychical && egg % 20 == 0) || chickenTypes.contains(typeChicken);
     }
 }

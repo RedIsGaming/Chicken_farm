@@ -13,15 +13,14 @@ The Java classes and records that are used in this project are:
 > The `main` method is used for a sample run of the program which contains an `iterator` and a `List` with some data.
 - [**`Farm`**](../src/main/java/chicken/Farm.java)
 > The `Farm` record is used to create a new farm.<br/>
-> The `Farm` record contains a `canonical constructor` and 2 method called `chickenType` and `checkFarm`.<br/>
+> The `Farm` record contains 2 methods called `chickenType` and `checkFarm`.<br/>
 > The `chickenType` method returns a list of chicken types.<br/>
 > The `checkFarm` method takes 3 arguments: `boolean isPsychical`, `int egg` and `String typeChicken`.
 
 ## How does the conditions work?
-> There have to be 0 or more eggs. Each farm can have no more than 1000 eggs stored and each basket stores exactly 20 
-> eggs. Not less or more. <br/>
-> The chicken types are listed in the List to match the chicken type.<br/>
-> The eggs have to be located on a physical Farm.
+> Each basket stores exactly 20 eggs. If the test doesn't come in pairs of 20 it will be false.<br/>
+> The chicken types are listed in the List to match the chicken type. If it's not a chicken type it will be false.<br/>
+> The eggs have to be psychically located on the Farm itself. If it's not located on the Farm it will be false.
 
 ## Test classes
 The Test classes that are used in this project are:

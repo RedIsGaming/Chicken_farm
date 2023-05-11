@@ -3,46 +3,27 @@ import chicken.Farm;
 import static org.junit.Assert.*;
 
 public class MCDC {
-    /* Chicken types:
-        "Black Sex Link",
-        "White Cochin",
-        "Rhode Island Red",
-        "Buff Orpington",
-        "Buff Laced Polish"
-    */
     @Test
     public void checkFarm1() {
-        boolean result = Farm.checkFarm(false, 80, "Crocodile");
+        boolean result = Farm.checkFarm(false, 823, "Fly");
         assertFalse(result);
     }
 
     @Test
     public void checkFarm2() {
-        boolean result = Farm.checkFarm(false, -92, "Black Sex Link");
+        boolean result = Farm.checkFarm(false, -78, "Buff Laced Polish");
         assertTrue(result);
     }
 
     @Test
     public void checkFarm3() {
-        boolean result = Farm.checkFarm(false, 760,"White Cochin");
-        assertTrue(result);
+        boolean result = Farm.checkFarm(false, 660,"Bee");
+        assertFalse(result);
     }
 
     @Test
     public void checkFarm4() {
-        boolean result = Farm.checkFarm(true,740, "Giraffe");
-        assertTrue(result);
-    }
-
-    @Test
-    public void checkFarm5() {
-        boolean result = Farm.checkFarm(true,5475, "Buff Orpington");
-        assertTrue(result);
-    }
-
-    @Test
-    public void checkFarm6() {
-        boolean result = Farm.checkFarm(true,1000, "Buff Laced Polish");
-        assertTrue(result);
+        boolean result = Farm.checkFarm(true,1795, "Goat");
+        assertFalse(result);
     }
 }
