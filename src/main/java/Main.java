@@ -4,9 +4,7 @@ import java.util.Iterator;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("\u001B[32mWelcome to the Reddy Chicken Farm! You can read the instructions in the " +
-            "docs folder." + "\n"
-        );
+        System.out.println("\u001B[32mWelcome to the Reddy Chicken Farm! Instructions are found in the docs folder.\n");
 
         List<Farm> farms = List.of(
             new Farm(true,0, "Black Sex Link"),
