@@ -1,10 +1,17 @@
 import org.junit.Test;
-import chicken.Farm;
+import chicken.*;
 import static org.junit.Assert.*;
 
 public class PT {
     @Test
-    public void checkFarm1() {
-        //
+    public void check1() {
+        //datatype
+        //assertWhat
+    }
+
+    @Test
+    public void check2() {
+        //datatype
+        //assertWhat
     }
 }
