@@ -53,7 +53,7 @@ The Test classes that are used in this project are:
 - [**`MCDC`**](../src/main/test/MCDC.java) with 4 test conditions.
 - [**`MCC`**](../src/main/test/MCC.java) with 8 test conditions.
 - [**`EKBVA`**](../src/main/test/EKBVA.java) with 12 test conditions.
-- [**`PT`**](../src/main/test/PT.java) with 12 test conditions.
+- [**`PT`**](../src/main/test/PT.java) with 6 test conditions.
 > The `CC` class is used to test the `Condition Coverage`. It contains 2 (test) methods: `checkFarm` with different
 > numbers.<br/>
 > The `DC` class is used to test the `Decision Coverage`. It contains 2 (test) methods: `checkFarm` with different
@@ -66,5 +66,5 @@ The Test classes that are used in this project are:
 > different numbers.<br/>
 > The `EKBVA` class is used to test the `Equivalence Classes Boundary Value Analysis`. It contains 12 (test) methods: 
 > `checkEgg` with different numbers.<br/>
-> The `PT` class is used to test the `Pairwise Testing`. It contains 12 (test) methods: `checkEnvironment` with different
+> The `PT` class is used to test the `Pairwise Testing`. It contains 6 (test) methods: `checkEnvironment` with different
 > numbers.<br/>
