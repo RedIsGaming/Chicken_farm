@@ -2,7 +2,7 @@ import org.junit.Test;
 import chicken.Egg;
 import static org.junit.Assert.*;
 
-public class EK {
+public class EKBVA {
     @Test
     public void checkEgg1() {
         double result = new Egg(-1).eggOption1();

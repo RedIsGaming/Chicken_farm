@@ -31,5 +31,9 @@ The Test classes that are used in this project are:
 - [**`CDC`**](../src/main/test/CDC.java)
 - [**`MCDC`**](../src/main/test/MCDC.java)
 - [**`MCC`**](../src/main/test/MCC.java)
-- [**`EK`**](../src/main/test/EK.java)
+- [**`EKBVA`**](../src/main/test/EKBVA.java)
 - [**`PT`**](../src/main/test/PT.java)
+
+- Out to date (have to be updated):
+- 13-5-2023
+- Soon

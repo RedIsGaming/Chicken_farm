@@ -2,7 +2,7 @@ package chicken;
 
 public record Egg(int egg) {
     public boolean checkEgg() {
-        return 0 < egg && egg <= 200 ||
+        return 0 <= egg && egg <= 200 ||
             200 < egg && egg <= 500 ||
             500 < egg && egg <= 1000;
     }
