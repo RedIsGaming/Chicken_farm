@@ -7,7 +7,7 @@ public class Main {
         System.out.println("\u001B[32mWelcome to the Reddy Chicken Farm! Instructions are found in the docs folder.\n");
 
         List<Farm> farms = List.of(
-            new Farm(true,260, "Cat"),
+            new Farm(true, 260, "Cat"),
             new Farm(false, 720, "Rhode Island Red"),
             new Farm(true, 39, "Black Sex Link")
         );
