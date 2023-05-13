@@ -26,24 +26,22 @@ The Java records that are used in this project are:
 > The `checkFarm` method is used to check if the eggs are psychically located on the farm itself and if the eggs are in 
 > pairs of 20. Combined with the `chickenType` method as condition.
 - [**`Egg`**](../src/main/java/chicken/Egg.java) with 4 methods.
-> The `Egg` record is used to create new Egg objects. It contains 4 methods: `checkEgg`, `eggOption1`, `eggOption2` and
-> `eggOption3`.<br/>
-> The `checkEgg` method is used to group the eggs in the right category and if the eggs are in the range of 0 to 1000.
-> <br/>
-> The `checkEgg` is then combined with the `eggOption1`, `eggOption2` and `eggOption3` methods as condition.<br/>
+> The `Egg` record is used to create new Egg objects. It contains 4 methods: `eggOption1`, `eggOption2`, `eggOption3` and
+> `eggOption`.<br/>
 > The `eggOption1` method is used for eggs that are in the range of 0 to 200. The price is the egg times 0.25.<br/>
 > The `eggOption2` method is used for eggs that are in the range of 201 to 500. The price is the egg times 0.20.<br/>
-> The `eggOption3` method is used for eggs that are in the range of 501 to 1000. The price is the egg times 0.15.
-- [**`Environment`**](../src/main/java/chicken/Environment.java) with 3 methods.
-> The `Environment` record is used to create new Environment objects. It contains 3 methods: `eggOrMeatOption1`,
-> `eggOrMeatOption2` and `eggOrMeatOption3`.<br/>
-> The `eggOrMeatOption` with number methods are combined with the `checkFarm` and `checkEgg` methods as condition.<br/>
+> The `eggOption3` method is used for eggs that are in the range of 501 to 1000. The price is the egg times 0.15.<br/>
+> The `eggOption` method is used to check if the eggs are in the range of 0 to 1000. Combined with the egg option methods,
+- [**`Environment`**](../src/main/java/chicken/Environment.java) with 4 methods.
+> The `Environment` record is used to create new Environment objects. It contains 4 methods: `eggOrMeatOption1`,
+> `eggOrMeatOption2`, `eggOrMeatOption3` and `eggOrMeatOption`.<br/>
 > The `eggOrMeatOption1` checks if the eggs are divided by 20 and sets the egg price to egg times 0.25. If it's a
 > broiler chicken and outside the stack mark, it will be false. It returns false if it's not a broiler chicken.<br/>
 > The `eggOrMeatOption2` checks if the eggs are divided by 20 and sets the egg price to egg times 0.20. If it's a
 > broiler chicken and outside the stack mark, it will be false. It returns false if it's not a broiler chicken.<br/>
 > The `eggOrMeatOption3` checks if the eggs are divided by 20 and sets the egg price to egg times 0.15. If it's a
-> broiler chicken and outside the stack mark, it will be false. It returns false if it's not a broiler chicken.
+> broiler chicken and outside the stack mark, it will be false. It returns false if it's not a broiler chicken.<br/>
+> The `eggOrMeatOption` method is used to check if the eggs are in the range of 0-1000. Combined with meat option.
 
 ## Test classes
 The Test classes that are used in this project are:
