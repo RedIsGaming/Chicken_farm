@@ -16,7 +16,8 @@ In this document you will find `some instructions` on how to use this project.
 ## Java classes
 The Java classes that are used in this project are:
 - [**`Main`**](../src/main/java/Main.java) with 1 method.
-> The `Main` class is used as an entry point for this project. It contains 1 method: `main`.
+> The `Main` class is used as an entry point for this project. It contains 1 method: `main`.<br/>
+> There are 3 Environment objects created with different values. A loop is used to iterate over them.
 
 ## Java records
 The Java records that are used in this project are:
@@ -50,7 +51,7 @@ The Test classes that are used in this project are:
 - [**`CDC`**](../src/main/test/CDC.java) with 4 test conditions.
 - [**`MCDC`**](../src/main/test/MCDC.java) with 4 test conditions.
 - [**`MCC`**](../src/main/test/MCC.java) with 8 test conditions.
-- [**`EKBVA`**](../src/main/test/EKBVA.java) with 12 test conditions.
+- [**`EKBVA`**](../src/main/test/EKBVA.java) with 9 test conditions.
 - [**`PT`**](../src/main/test/PT.java) with 6 test conditions.
 > The `CC` class is used to test the `Condition Coverage`. It contains 2 (test) methods: `checkFarm` with different
 > numbers.<br/>
@@ -62,7 +63,7 @@ The Test classes that are used in this project are:
 > with different numbers.<br/>
 > The `MCC` class is used to test the `Multiple Condition Coverage`. It contains 8 (test) methods: `checkFarm` with
 > different numbers.<br/>
-> The `EKBVA` class is used to test the `Equivalence Classes Boundary Value Analysis`. It contains 12 (test) methods: 
+> The `EKBVA` class is used to test the `Equivalence Classes Boundary Value Analysis`. It contains 9 (test) methods: 
 > `checkEgg` with different numbers.<br/>
 > The `PT` class is used to test the `Pairwise Testing`. It contains 6 (test) methods: `checkEnvironment` with different
 > numbers.<br/>

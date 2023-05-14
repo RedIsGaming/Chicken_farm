@@ -1,29 +1,30 @@
 import java.util.List;
-import chicken.Farm;
+import chicken.Environment;
 import java.util.Iterator;
 
 public class Main {
     public static void main(String[] args) {
         System.out.println("\u001B[32mWelcome to the Reddy Chicken Farm! Instructions are found in the docs folder.\n");
 
-        List<Farm> farms = List.of(
-            new Farm(true, 260, "Cat"),
-            new Farm(false, 720, "Rhode Island Red"),
-            new Farm(true, 39, "Black Sex Link")
+        List<Environment> environments = List.of(
+            new Environment(260, true, "Cat", false),
+            new Environment(720, false, "Rhode Island Red", true),
+            new Environment(39, true, "Black Sex Link", true)
         );
 
         int storage = 0;
-        Iterator<Farm> iterator = farms.iterator();
+        Iterator<Environment> iterator = environments.iterator();
 
         while (iterator.hasNext()) {
-            Farm farm = iterator.next();
+            Environment environment = iterator.next();
             storage++;
 
             System.out.printf("\u001B[34mStorage %d\n" +
                 "Is psychical: %b\n" +
                 "Number of eggs: %d\n" +
-                "Chicken type: %s\n\n",
-                storage, farm.isPsychical(), farm.egg(), farm.typeChicken()
+                "Chicken type: %s\n" +
+                "Broiler chicken: %b\n\n", storage,
+                environment.isPsychical(), environment.egg(), environment.typeChicken(), environment.broilerChicken()
             );
         }
     }

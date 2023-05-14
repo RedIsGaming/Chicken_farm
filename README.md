@@ -10,7 +10,7 @@ You can buy the eggs in `pairs of 20` from `0 to 1000` with `3 price options`. T
 - RedIsGaming
 
 ## Status
-> It was last updated on 13-5-2023.
+> It was last updated on 14-5-2023.
 
 ## License
 The MIT License
