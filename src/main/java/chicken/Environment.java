@@ -1,21 +1,22 @@
 package chicken;
 
 public record Environment(int egg, boolean isPsychical, String typeChicken, boolean broilerChicken) {
+    private boolean checkEnvironment() {
+        return new Farm(isPsychical, egg, typeChicken).checkFarm() && egg % 20 == 0;
+    }
+
     private double eggOrMeatOption1() {
-        return new Farm(isPsychical, egg, typeChicken).checkFarm() &&
-            egg % 20 == 0 ? new Egg(egg).eggOption() :
+        return checkEnvironment() ? new Egg(egg).eggOption() :
             broilerChicken ? (egg * 0.50) / (egg * 60.00 / 1000) : 0.00;
     }
 
     private double eggOrMeatOption2() {
-        return new Farm(isPsychical, egg, typeChicken).checkFarm() &&
-            egg % 20 == 0 ? new Egg(egg).eggOption() :
+        return checkEnvironment() ? new Egg(egg).eggOption() :
             broilerChicken ? (egg * 0.40) / (egg * 60.00 / 1000) : 0.00;
     }
 
     private double eggOrMeatOption3() {
-        return new Farm(isPsychical, egg, typeChicken).checkFarm() &&
-            egg % 20 == 0 ? new Egg(egg).eggOption() :
+        return checkEnvironment() ? new Egg(egg).eggOption() :
             broilerChicken ? (egg * 0.30) / (egg * 60.00 / 1000) : 0.00;
     }
 

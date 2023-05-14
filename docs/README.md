@@ -26,9 +26,10 @@ The Java records that are used in this project are:
 > The `chickenType` method is used to check if the chicken type is in the list and matches with them.<br/>
 > The `checkFarm` method is used to check if the eggs are psychically located on the farm itself and if the eggs are in 
 > pairs of 20. Combined with the `chickenType` method as condition.
-- [**`Egg`**](../src/main/java/chicken/Egg.java) with 4 methods.
+- [**`Egg`**](../src/main/java/chicken/Egg.java) with 5 methods.
 > The `Egg` record is used to create new Egg objects. It contains 4 methods: `eggOption1`, `eggOption2`, `eggOption3` and
 > `eggOption`.<br/>
+> The `checkEnvironment` method is used to create a new Farm object and check if the eggs are divided by 20.<br/>
 > The `eggOption1` method is used for eggs that are in the range of 0 to 200. The price is the egg times 0.25.<br/>
 > The `eggOption2` method is used for eggs that are in the range of 201 to 500. The price is the egg times 0.20.<br/>
 > The `eggOption3` method is used for eggs that are in the range of 501 to 1000. The price is the egg times 0.15.<br/>
