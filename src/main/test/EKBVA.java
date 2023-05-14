@@ -5,13 +5,13 @@ import static org.junit.Assert.*;
 public class EKBVA {
     @Test
     public void checkEgg1() {
-        double result = new Egg(0).eggOption();
+        double result = new Egg(-1).eggOption();
         assertEquals(0.00, result, 0.0);
     }
 
     @Test
     public void checkEgg2() {
-        double result = new Egg(1).eggOption();
+        double result = new Egg(0).eggOption();
         assertEquals(0.00, result, 0.0);
     }
 
