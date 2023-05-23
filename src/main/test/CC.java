@@ -11,7 +11,7 @@ public class CC {
 
     @Test
     public void checkFarm2() {
-        boolean result = new Farm(true, 38, "Black Sex Link").checkFarm();
+        boolean result = new Farm(false, 38, "Black Sex Link").checkFarm();
         assertTrue(result);
     }
 }
