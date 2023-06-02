@@ -26,17 +26,17 @@ The Java records that are used in this project are:
 > The `chickenType` method is used to check if the chicken type is in the list and matches with them.<br/>
 > The `checkFarm` method is used to check if the eggs are psychically located on the farm itself and if the eggs are in 
 > pairs of 20. Combined with the `chickenType` method as condition.
-- [**`Egg`**](../src/main/java/chicken/Egg.java) with 5 methods.
+- [**`Egg`**](../src/main/java/chicken/Egg.java) with 4 methods.
 > The `Egg` record is used to create new Egg objects. It contains 4 methods: `eggOption1`, `eggOption2`, `eggOption3` and
 > `eggOption`.<br/>
-> The `checkEnvironment` method is used to create a new Farm object and check if the eggs are divided by 20.<br/>
 > The `eggOption1` method is used for eggs that are in the range of 0 to 200. The price is the egg times 0.25.<br/>
 > The `eggOption2` method is used for eggs that are in the range of 201 to 500. The price is the egg times 0.20.<br/>
 > The `eggOption3` method is used for eggs that are in the range of 501 to 1000. The price is the egg times 0.15.<br/>
 > The `eggOption` method is used to check if the eggs are in the range of 0 to 1000. Combined with the egg option methods,
-- [**`Environment`**](../src/main/java/chicken/Environment.java) with 4 methods.
-> The `Environment` record is used to create new Environment objects. It contains 4 methods: `eggOrMeatOption1`,
-> `eggOrMeatOption2`, `eggOrMeatOption3` and `eggOrMeatOption`.<br/>
+- [**`Environment`**](../src/main/java/chicken/Environment.java) with 5 methods.
+> The `Environment` record is used to create new Environment objects. It contains 5 methods: `checkEnvironment`,
+> `eggOrMeatOption1`, `eggOrMeatOption2`, `eggOrMeatOption3` and `eggOrMeatOption`.<br/>
+> The `checkEnvironment` method is used to create a new Farm object and check if the eggs are divided by 20.<br/>
 > The `eggOrMeatOption1` checks if the eggs are divided by 20 and sets the egg price to egg times 0.25. If it's a
 > broiler chicken and outside the stack mark, it will be false. It returns false if it's not a broiler chicken.<br/>
 > The `eggOrMeatOption2` checks if the eggs are divided by 20 and sets the egg price to egg times 0.20. If it's a
@@ -49,7 +49,7 @@ The Java records that are used in this project are:
 The Test classes that are used in this project are:
 - [**`CC`**](../src/main/test/CC.java) with 2 test conditions.
 - [**`DC`**](../src/main/test/DC.java) with 2 test conditions.
-- [**`CDC`**](../src/main/test/CDC.java) with 4 test conditions.
+- [**`CDC`**](../src/main/test/CDC.java) with 2 test conditions.
 - [**`MCDC`**](../src/main/test/MCDC.java) with 4 test conditions.
 - [**`MCC`**](../src/main/test/MCC.java) with 8 test conditions.
 - [**`EKBVA`**](../src/main/test/EKBVA.java) with 9 test conditions.
@@ -58,7 +58,7 @@ The Test classes that are used in this project are:
 > numbers.<br/>
 > The `DC` class is used to test the `Decision Coverage`. It contains 2 (test) methods: `checkFarm` with different
 > numbers.<br/>
-> The `CDC` class is used to test the `Condition Decision Coverage`. It contains 4 (test) methods: `checkFarm` with
+> The `CDC` class is used to test the `Condition Decision Coverage`. It contains 2 (test) methods: `checkFarm` with
 > different numbers.<br/>
 > The `MCDC` class is used to test the `Modified Condition Decision Coverage`. It contains 4 (test) methods: `checkFarm`
 > with different numbers.<br/>
